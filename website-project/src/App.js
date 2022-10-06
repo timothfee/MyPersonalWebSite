@@ -34,7 +34,6 @@ const Container = tw.div`bg-black h-[100%] w-[100%] min-h-[100vh]`;
 const NextContainer = tw.div`bg-gray-500 bg-opacity-10 h-[100%] w-3/4 min-h-[100vh] mx-auto`;
 
 const Header = tw.h1`text-5xl text-center text-white font-bold pt-32 w-1/2 pb-9 pr-8`;
-const GitHubIcon = tw(GitHub)`w-10 h-10 text-white`;
 const ImageContainer = tw.div`flex-col`;
 const Caption = tw.p` text-white font-bold text-sm w-1/4 ml-8 mt-4`;
 const Image = tw.img`rounded-full h-32 w-32 ml-32`;
