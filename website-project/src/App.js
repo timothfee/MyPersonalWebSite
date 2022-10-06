@@ -1,5 +1,4 @@
 import tw from "twin.macro";
-import GitHub from "../src/svg/GitHub.svg";
 
 function App() {
   return (
