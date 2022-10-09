@@ -27,6 +27,7 @@ function App() {
             Dungeons & Dragons campaign I hope you stay a while and explore!
             Have a wonderful year!
           </Introduction>
+          <hr/>
           <Download>
             <ResumeHeader>My work History <BriefCase className='ml-4 h-8 w-8 stroke-2'/></ResumeHeader>
             <Row>
@@ -70,6 +71,8 @@ function App() {
         <SubHeaderContainer>
           <Subheader>Enjoy the look around</Subheader>
         </SubHeaderContainer>
+        <hr/>
+        <CopyRight>© 2022 Timothy D.S. Fee. All rights reserved.</CopyRight>
       </NextContainer>
     </Container>
   );
@@ -78,27 +81,29 @@ function App() {
 export default App;
 
 const Container = tw.div`bg-black h-[100%] w-[100%] min-h-[110vh]`;
-const NextContainer = tw.div`bg-gray-500 bg-opacity-10 h-[100%] w-full md:w-3/4 min-h-[100vh] mx-auto p-8 md:p-4 pb-16`;
+const NextContainer = tw.div`bg-gray-600 bg-opacity-20 h-[100%] w-full md:w-3/4 min-h-[100vh] mx-0 md:mx-auto p-2 md:p-4 pb-16`;
 
-const Header = tw.h1`text-5xl text-center text-white font-bold pt-32 w-full lg:w-1/2 pb-9 pr-8`;
+const Header = tw.h1`text-5xl text-center text-white font-bold pt-32 w-full lg:w-1/2 pb-9 mx-auto md:mx-0 pr-0 md:pr-8`;
 const ImageContainer = tw.div`flex-col`;
 const Caption = tw.p` text-gray-500 opacity-10 hover:opacity-100 hover:text-white transition ease-in-out duration-300 font-bold text-sm w-full mx-auto md:ml-8 mt-4`;
-const Image = tw.img`rounded-full h-32 w-32 ml-32`;
+const Image = tw.img`rounded-full h-20 w-20 ml-32 border-white border-2 ring-black ring-2`;
 
-const Download = tw.div` rounded-2xl text-lg font-bold border-gray-500 border mx-8 w-5/6 whitespace-nowrap`;
+const Download = tw.div`mt-8 rounded-2xl text-lg font-bold border-gray-500 border mx-auto w-full md:w-5/6 whitespace-nowrap`;
 const ResumeHeader = tw.div`flex flex-row text-lg font-bold text-white mt-8 mb-4 justify-center`;
 const Row = tw.div`flex flex-row mt-4 mx-4 mr-16 justify-start`;
-const Description = tw.div`flex flex-col`;
-const Company = tw.h2`text-base font-bold`;
-const CompanyTitle = tw.p`text-sm text-gray-500 font-semibold`;
-const Date = tw.p`text-gray-600 font-medium text-xs`;
+const Description = tw.div`flex flex-col ml-8 mr-auto w-1/2`;
+const Company = tw.h2`text-base font-semibold`;
+const CompanyTitle = tw.p`text-sm text-gray-500`;
+const Date = tw.p`text-gray-600 text-xs`;
 const WorkImage = tw.img`mr-2 rounded-full h-10 w-10`;
 const Resume = tw.div`flex flex-col text-white font-bold text-sm text-center mt-16 align-baseline`;
 const ResumeButton = tw.button`flex justify-center bg-gray-800 bg-opacity-50 font-bold text-sm mx-auto my-4 py-4 align-baseline border border-gray-500 rounded-2xl h-3/5 w-10/12 hover:bg-white hover:text-black hover:border-black transition ease-in-out duration-300`;
 const DocSVG = tw(DocDownload)`h-6 w-6 ml-2 text-white stroke-2 hover:text-black`;
 
-const Content = tw.div` block  lg:flex w-3/4 h-full text-gray-300 mx-auto text-xl pl-4 pr-4 pb-4 my-8 mb-8 justify-between`;
-const Introduction = tw.p`text-white w-full h-full mb-8`;
+const Content = tw.div` block  lg:flex w-full sm:w-3/4 h-full text-gray-300 mx-auto text-xl pl-4 pr-4 pb-4 my-8 mb-8 justify-between`;
+const Introduction = tw.p`text-base text-white w-full h-full mb-8 mr-8`;
 
 const SubHeaderContainer = tw.div`flex justify-center items-center`;
-const Subheader = tw.h2`text-6xl font-bold text-gray-200 animate-pulse`;
+const Subheader = tw.h2`text-6xl font-bold text-gray-200 animate-pulse pb-16`;
+
+const CopyRight = tw.p`text-center text-gray-500 text-sm mt-8`;
