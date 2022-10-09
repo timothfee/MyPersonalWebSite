@@ -17,7 +17,7 @@ function App() {
           </Caption>
         </ImageContainer>
         <Content>
-          <p>
+          <Introduction>
             Hello! I'm a developer and I love to build. I currently do all my
             coding in React with Tailwind CSS, but I got my start with C# and
             the .NET Framework. I believe I could be a great addition to any
@@ -26,9 +26,9 @@ function App() {
             computers, I also love making music! And I will start the office
             Dungeons & Dragons campaign I hope you stay a while and explore!
             Have a wonderful year!
-          </p>
+          </Introduction>
           <Download>
-            <ResumeHeader className="text-center">My work History <BriefCase className='ml-4 h-8 w-8'/></ResumeHeader>
+            <ResumeHeader>My work History <BriefCase className='ml-4 h-8 w-8 stroke-2'/></ResumeHeader>
             <Row>
               <WorkImage src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.acellus.com%2Fwp-content%2Fuploads%2F2017%2F09%2FAcellus-Cube-Logo-Color.jpg&f=1&nofb=1&ipt=f95bd14bf42128cd18f77a63f97797c1bb038d9ddc2330a621dc69b3691b9466&ipo=images" />
               <Description>
@@ -77,16 +77,16 @@ function App() {
 
 export default App;
 
-const Container = tw.div`bg-black h-[100%] w-[100%] min-h-[100vh]`;
-const NextContainer = tw.div`bg-gray-500 bg-opacity-10 h-[100%] w-3/4 min-h-[100vh] mx-auto`;
+const Container = tw.div`bg-black h-[100%] w-[100%] min-h-[110vh]`;
+const NextContainer = tw.div`bg-gray-500 bg-opacity-10 h-[100%] w-full md:w-3/4 min-h-[100vh] mx-auto p-8 md:p-4 pb-16`;
 
-const Header = tw.h1`text-5xl text-center text-white font-bold pt-32 w-1/2 pb-9 pr-8`;
+const Header = tw.h1`text-5xl text-center text-white font-bold pt-32 w-full lg:w-1/2 pb-9 pr-8`;
 const ImageContainer = tw.div`flex-col`;
-const Caption = tw.p` text-white font-bold text-sm w-1/4 ml-8 mt-4`;
+const Caption = tw.p` text-gray-500 opacity-10 hover:opacity-100 hover:text-white transition ease-in-out duration-300 font-bold text-sm w-full mx-auto md:ml-8 mt-4`;
 const Image = tw.img`rounded-full h-32 w-32 ml-32`;
 
-const Download = tw.div` rounded-2xl text-lg font-bold border-gray-500 border mx-8 w-full whitespace-nowrap`;
-const ResumeHeader = tw.div`flex flex-row text-lg font-bold text-white mx-8 mt-8 mb-4`;
+const Download = tw.div` rounded-2xl text-lg font-bold border-gray-500 border mx-8 w-5/6 whitespace-nowrap`;
+const ResumeHeader = tw.div`flex flex-row text-lg font-bold text-white mt-8 mb-4 justify-center`;
 const Row = tw.div`flex flex-row mt-4 mx-4 mr-16 justify-start`;
 const Description = tw.div`flex flex-col`;
 const Company = tw.h2`text-base font-bold`;
@@ -97,7 +97,8 @@ const Resume = tw.div`flex flex-col text-white font-bold text-sm text-center mt-
 const ResumeButton = tw.button`flex justify-center bg-gray-800 bg-opacity-50 font-bold text-sm mx-auto my-4 py-4 align-baseline border border-gray-500 rounded-2xl h-3/5 w-10/12 hover:bg-white hover:text-black hover:border-black transition ease-in-out duration-300`;
 const DocSVG = tw(DocDownload)`h-6 w-6 ml-2 text-white stroke-2 hover:text-black`;
 
-const Content = tw.div` flex w-1/2 h-full text-gray-300 mx-auto text-xl pl-4 pr-4 pb-4 my-8 mb-8`;
+const Content = tw.div` block  lg:flex w-3/4 h-full text-gray-300 mx-auto text-xl pl-4 pr-4 pb-4 my-8 mb-8 justify-between`;
+const Introduction = tw.p`text-white w-full h-full mb-8`;
 
 const SubHeaderContainer = tw.div`flex justify-center items-center`;
 const Subheader = tw.h2`text-6xl font-bold text-gray-200 animate-pulse`;
