@@ -86,7 +86,7 @@ const NextContainer = tw.div`bg-gray-600 bg-opacity-20 h-[100%] w-full md:w-3/4 
 const Header = tw.h1`text-5xl text-center text-white font-bold pt-32 w-full lg:w-1/2 pb-9 mx-auto md:mx-0 pr-0 md:pr-8`;
 const ImageContainer = tw.div`flex-col`;
 const Caption = tw.p` text-gray-500 opacity-10 hover:opacity-100 hover:text-white transition ease-in-out duration-300 font-bold text-sm w-full mx-auto md:ml-8 mt-4`;
-const Image = tw.img`rounded-full h-20 w-20 ml-32 border-white border-2 ring-black ring-2`;
+const Image = tw.img`rounded-full h-20 w-20 ml-52 border-white border-2 ring-black ring-2`;
 
 const Download = tw.div`mt-8 rounded-2xl text-lg font-bold border-gray-500 border mx-auto w-full md:w-5/6 whitespace-nowrap`;
 const ResumeHeader = tw.div`flex flex-row text-lg font-bold text-white mt-8 mb-4 justify-center`;
@@ -100,7 +100,7 @@ const Resume = tw.div`flex flex-col text-white font-bold text-sm text-center mt-
 const ResumeButton = tw.button`flex justify-center bg-gray-800 bg-opacity-50 font-bold text-sm mx-auto my-4 py-4 align-baseline border border-gray-500 rounded-2xl h-3/5 w-10/12 hover:bg-white hover:text-black hover:border-black transition ease-in-out duration-300`;
 const DocSVG = tw(DocDownload)`h-6 w-6 ml-2 text-white stroke-2 hover:text-black`;
 
-const Content = tw.div` block  lg:flex w-full sm:w-3/4 h-full text-gray-300 mx-auto text-xl pl-4 pr-4 pb-4 my-8 mb-8 justify-between`;
+const Content = tw.div` block  lg:flex w-full h-full text-gray-300 mx-auto text-xl pl-4 pr-4 pb-4 my-8 mb-8 justify-between`;
 const Introduction = tw.p`text-base text-white w-full h-full mb-8 mr-8`;
 
 const SubHeaderContainer = tw.div`flex justify-center items-center`;
