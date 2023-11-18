@@ -1,10 +1,17 @@
 import tw from "twin.macro";
 
+import { Link } from "react-router-dom";
+
 
 export default function Pwnagotchi() {
   return (
     <Container>
       <NextContainer>
+        <div>
+          <Home to="/home">
+            Home
+          </Home>
+        </div>
         <Header>
           The Pwnagotchi (⌐■_■)
         </Header>
@@ -29,5 +36,7 @@ const Description = tw.div`text-gray-800 font-semibold ml-20 mr-20`
 const Break = tw.div`mb-8 border-gray-500`
 
 const Header = tw.h1`text-gray-800 text-5xl text-center font-bold pt-32 w-full xl:w-1/2 pb-9 mx-auto md:mx-0 pr-0 md:pr-8`;
+
+const Home = tw(Link)`mx-auto`
 
 const CopyRight = tw.p`text-center text-gray-500 text-sm mt-8`;
